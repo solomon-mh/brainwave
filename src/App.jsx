@@ -1,8 +1,27 @@
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Benefits from "./components/Benefits";
+import Collaborations from "./components/Collaborations";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Pricing from "./components/Pricing";
+import RoadMap from "./components/RoadMap";
+import Services from "./components/Services";
 const App = () => {
   return (
-    <div>
-      <h1 className="text-4xl">Hello World</h1>
-    </div>
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+        <Hero />
+        <Benefits />
+        <Collaborations />
+        <Services />
+        <Pricing />
+        <RoadMap />
+        <Footer />
+      </div>
+      <ButtonGradient />
+    </>
   );
 };
 
